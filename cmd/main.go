@@ -3,6 +3,7 @@ package main
 import (
 	"mweather-go/config"
 	"mweather-go/internal/app"
+	"mweather-go/internal/app/weather/service/city"
 	"os"
 	"os/signal"
 	"syscall"
@@ -16,6 +17,7 @@ func main() {
 	log.SetUp(isProduction, log.Any("app_name", config.Items().AppName))
 	defer log.Sync()
 
+	city.Register()
 	// cnf := mysql.NewConfig(
 	// 	config.Items().Mysql.User,
 	// 	config.Items().Mysql.Pwd,
