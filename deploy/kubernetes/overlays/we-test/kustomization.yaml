@@ -1,0 +1,7 @@
+namespace: test-common
+
+bases:
+- ../../base
+
+patchesStrategicMerge:
+- deploy.yaml

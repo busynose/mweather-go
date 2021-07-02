@@ -1,0 +1,5 @@
+commonLabels:
+  app: mweather-go
+
+resources:
+- deploy.yaml

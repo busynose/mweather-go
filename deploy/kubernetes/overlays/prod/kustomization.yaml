@@ -1,0 +1,7 @@
+namespace: prod-common
+
+bases:
+- ../../base
+
+patchesStrategicMerge:
+- deploy.yaml
